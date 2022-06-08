@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91fa66640e354ca47bc07c4d3e20c70d, type: 3}
+  m_Name: Gun2
+  m_EditorClassIdentifier: 
+  gunPrefab: {fileID: 8358076391201404784, guid: 1250ddf81ba558f45977288550aab292,
+    type: 3}
+  maxAmmo: 20
+  fireRate: 10
+  damageRate: 5
+  critRate: 10
