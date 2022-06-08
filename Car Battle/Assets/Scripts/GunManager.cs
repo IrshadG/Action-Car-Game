@@ -11,6 +11,8 @@ public class GunManager : MonoBehaviour
     public Transform bulletSpawnPoint;
     private GameObject bullet;
 
+    private float fireRate;
+
     private void Awake()
     {
         //Singleton
@@ -30,6 +32,8 @@ public class GunManager : MonoBehaviour
 
         //Load bullet object from assets 
         bullet = Resources.Load("Bullet/Bullet") as GameObject;
+
+        fireRate = GunSelection.instance.guns[GunSelection.instance.currentSelection].fireRate;
     }
 
     public void SpawnGun()
@@ -44,7 +48,7 @@ public class GunManager : MonoBehaviour
 
     public void StartShooting()
     {
-        InvokeRepeating("SpawnBullets", 0f, 0.3f);
+        InvokeRepeating("SpawnBullets", 0f, fireRate);
     }
 
     public void StopShooting()

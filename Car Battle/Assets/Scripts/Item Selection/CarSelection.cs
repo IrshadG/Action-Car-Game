@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class CarSelection : BaseSelection 
 {
+    public static CarSelection instance;
+
     public int currentSelection = 0;
     public BaseCar[] cars;
 
@@ -11,6 +13,15 @@ public class CarSelection : BaseSelection
 
     public Image carImage;
     private Sprite[] allCarImages;
+
+    private void Awake()
+    {
+        //Singleton
+        if (instance != null)
+            Destroy(gameObject);
+        else
+            instance = this;
+    }
 
     public void LoadCars()
     {
@@ -27,7 +38,6 @@ public class CarSelection : BaseSelection
         allCarImages = new Sprite[_allCarImages.Length];
 
         _allCarImages.CopyTo(allCarImages,0);
-        Debug.Log(_allCarImages.Length);
     }
 
     public override void IncrementSelection()

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2766803245883655997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3198655455057938508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GunPlacement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,9 +81,9 @@ GameObject:
   - component: {fileID: 8844990160070286148}
   - component: {fileID: 8211301392948707839}
   - component: {fileID: 8211301392948707824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Car1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca5baa1d0c9164042adf132a4ec0241c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
 --- !u!1 &8554989094985256651
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +143,7 @@ GameObject:
   - component: {fileID: 3977594032073275071}
   - component: {fileID: 4770804426345327200}
   - component: {fileID: 8554989094985256652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +237,7 @@ GameObject:
   - component: {fileID: 9022133702510582450}
   - component: {fileID: 9022133702510582452}
   - component: {fileID: 9022133702510582451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Axle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +318,7 @@ GameObject:
   - component: {fileID: 9022133702564040744}
   - component: {fileID: 9022133702564040746}
   - component: {fileID: 9022133702564040745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Axle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +399,7 @@ GameObject:
   - component: {fileID: 9022133702582753010}
   - component: {fileID: 9022133702582753013}
   - component: {fileID: 9022133702582753012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +480,7 @@ GameObject:
   - component: {fileID: 9022133702599672024}
   - component: {fileID: 9022133702599672027}
   - component: {fileID: 9022133702599672026}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +562,7 @@ GameObject:
   - component: {fileID: 9022133702608280897}
   - component: {fileID: 9022133702608280896}
   - component: {fileID: 9022133702608280911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Antena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +657,7 @@ GameObject:
   - component: {fileID: 9022133703154528259}
   - component: {fileID: 9022133703154528262}
   - component: {fileID: 9022133703154528261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 1 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +738,7 @@ GameObject:
   - component: {fileID: 9022133703881781846}
   - component: {fileID: 9022133703881781833}
   - component: {fileID: 9022133703881781832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +820,7 @@ GameObject:
   - component: {fileID: 9022133704075326105}
   - component: {fileID: 9022133704075326104}
   - component: {fileID: 9022133704075326823}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AntenaHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}

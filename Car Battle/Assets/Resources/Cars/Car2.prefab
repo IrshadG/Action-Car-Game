@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3429213171226367180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2707019485039745981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GunPlacement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 8414875968631464296}
   - component: {fileID: 8414875968631464297}
   - component: {fileID: 8414875968631465622}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AntenaHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 8414875968974430631}
   - component: {fileID: 8414875968974430648}
   - component: {fileID: 8414875968974430649}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 8414875969597744114}
   - component: {fileID: 8414875969597744119}
   - component: {fileID: 8414875969597744116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 1 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 8414875970072871897}
   - component: {fileID: 8414875970072871899}
   - component: {fileID: 8414875970072871896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Axle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 8414875970099774723}
   - component: {fileID: 8414875970099774724}
   - component: {fileID: 8414875970099774725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 8414875970116932393}
   - component: {fileID: 8414875970116932394}
   - component: {fileID: 8414875970116932395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 8414875970125237936}
   - component: {fileID: 8414875970125237937}
   - component: {fileID: 8414875970125237950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Antena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 8414875970296334659}
   - component: {fileID: 8414875970296334661}
   - component: {fileID: 8414875970296334658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Axle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,9 +759,9 @@ GameObject:
   - component: {fileID: 8308328092327364789}
   - component: {fileID: 8648825319381406222}
   - component: {fileID: 8648825319381406209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Car2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -809,7 +809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca5baa1d0c9164042adf132a4ec0241c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
 --- !u!1 &9172643388244958522
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +821,7 @@ GameObject:
   - component: {fileID: 4522154314884588878}
   - component: {fileID: 5460586545762171281}
   - component: {fileID: 9172643388244958525}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

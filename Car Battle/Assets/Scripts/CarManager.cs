@@ -12,7 +12,7 @@ public class CarManager : MonoBehaviour
 
     public float input;
 
-    private float maxRotation = 1;
+    private float maxRotation;
 
     private void Awake()
     {
@@ -29,6 +29,8 @@ public class CarManager : MonoBehaviour
 
         //Load cars from asset directory through CarSelection class
         carSelection.LoadCars();
+
+        maxRotation = CarSelection.instance.cars[CarSelection.instance.currentSelection].handling;
     }
 
     public void SpawnCar()

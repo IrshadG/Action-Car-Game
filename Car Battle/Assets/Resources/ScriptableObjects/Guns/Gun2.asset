@@ -15,6 +15,6 @@ MonoBehaviour:
   gunPrefab: {fileID: 8358076391201404784, guid: 1250ddf81ba558f45977288550aab292,
     type: 3}
   maxAmmo: 20
-  fireRate: 10
+  fireRate: 0.3
   damageRate: 5
   critRate: 10

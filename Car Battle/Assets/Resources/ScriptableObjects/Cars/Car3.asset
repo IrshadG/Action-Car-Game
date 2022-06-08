@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carPrefab: {fileID: 5756693647368440916, guid: 05c95697f5be49f44b5a2307495cf033,
     type: 3}
-  maxSpeed: 2
+  maxSpeed: 20
   maxHP: 100
   handling: 1

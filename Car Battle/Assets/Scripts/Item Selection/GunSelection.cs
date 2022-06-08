@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class GunSelection : BaseSelection
 {
+    public static GunSelection instance;
+
     public int currentSelection = 0;
     public BaseGun[] guns;
 
@@ -11,6 +13,15 @@ public class GunSelection : BaseSelection
 
     public Image gunImage;
     private Sprite[] allGunImages;
+
+    private void Awake()
+    {
+        //Singleton
+        if (instance != null)
+            Destroy(gameObject);
+        else
+            instance = this;
+    }
 
     public void LoadGuns()
     {
