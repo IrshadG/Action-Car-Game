@@ -16,5 +16,5 @@ MonoBehaviour:
     type: 3}
   maxAmmo: 20
   fireRate: 0.3
-  damageRate: 5
-  critRate: 10
+  damageRate: 15
+  critRate: 50

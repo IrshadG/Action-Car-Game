@@ -6,7 +6,7 @@ public class Home_GS : Base_GS
         manager.LogMessage("Home GameState started");
     }
 
-    public override void OnStateChanged(GameManager manager)
+    public override void ChangeState(GameManager manager)
     {
         UIHandler.instance.canvasMenu.SetActive(false);
         manager.gsCurrent = manager.gsGameplay;

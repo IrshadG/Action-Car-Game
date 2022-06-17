@@ -12,4 +12,9 @@ public class Shoot : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         GunManager.instance.StopShooting();
     }
+
+    public void StopInput()
+    {
+        GunManager.instance.StopShooting();
+    }
 }

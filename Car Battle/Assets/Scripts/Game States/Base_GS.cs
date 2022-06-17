@@ -9,5 +9,5 @@ public abstract class Base_GS
 
     }
 
-    public abstract void OnStateChanged(GameManager manager);
+    public abstract void ChangeState(GameManager manager);
 }

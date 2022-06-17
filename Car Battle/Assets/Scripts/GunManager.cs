@@ -12,6 +12,9 @@ public class GunManager : MonoBehaviour
     private GameObject bullet;
 
     private float fireRate;
+    private float damageRate;
+    private float critRate;
+    private float critValue = 0f;
 
     private void Awake()
     {
@@ -34,6 +37,8 @@ public class GunManager : MonoBehaviour
         bullet = Resources.Load("Bullet/Bullet") as GameObject;
 
         fireRate = GunSelection.instance.guns[GunSelection.instance.currentSelection].fireRate;
+        damageRate = GunSelection.instance.guns[GunSelection.instance.currentSelection].damageRate;
+        critRate = GunSelection.instance.guns[GunSelection.instance.currentSelection].critRate;
     }
 
     public void SpawnGun()
@@ -62,5 +67,38 @@ public class GunManager : MonoBehaviour
         newBullet.transform.parent = null;
         newBullet.transform.localPosition = myGun.transform.GetChild(1).position;
         newBullet.transform.localRotation = myGun.transform.rotation;
+        AssignDamage(newBullet);
+
+    }
+
+    //Decide if normal or critical shot
+    private void AssignDamage(GameObject bullet)
+    {
+        IncreaseCritChance();
+
+        float randValue = Random.value * 100f;
+        
+        
+        if(randValue < critValue)
+        {
+            //Critical damage
+            bullet.GetComponent<BulletBehaviour>().bulletDamage = damageRate + 10f;
+        }
+        else
+        {
+            //Normal damage
+            bullet.GetComponent<BulletBehaviour>().bulletDamage = damageRate;
+        }
+    }
+
+    private void IncreaseCritChance()
+    {
+        critValue += critRate;
+
+        //Don't let crit value go beyond 100
+        if(critValue > 100)
+        {
+            critValue = 100;
+        }
     }
 }

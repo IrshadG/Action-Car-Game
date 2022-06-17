@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.6.15",
     "com.unity.collab-proxy": "1.15.7",
     "com.unity.ide.rider": "2.0.7",
@@ -8,6 +9,8 @@
     "com.unity.inputsystem": "1.2.0",
     "com.unity.mobile.android-logcat": "1.2.3",
     "com.unity.mobile.notifications": "1.4.2",
+    "com.unity.render-pipelines.universal": "7.3.1",
+    "com.unity.shadergraph": "7.3.1",
     "com.unity.test-framework": "1.1.29",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.4.8",

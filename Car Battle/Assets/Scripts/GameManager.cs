@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,21 +18,26 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Updates current Gamestate function every frame
         gsCurrent.OnStateUpdate(this);
     }
 
     //On start button pressed
-    public void StartGame()
+    public void OnChangeState()
     {
-        gsCurrent.OnStateChanged(this);
+        gsCurrent.ChangeState(this);
     }
 
     //Debugging purposes only
     public void LogMessage(string message)
     {
         Debug.Log(message);
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(0);      //Current scene
     }
 }

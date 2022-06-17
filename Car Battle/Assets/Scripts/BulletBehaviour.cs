@@ -1,33 +1,51 @@
 using System.Collections;
 using UnityEngine;
-
+using TMPro;
 public class BulletBehaviour : MonoBehaviour
 {
-    private float bulletLife = 5f;        //in Seconds
-    private float bulletSpeed = 80f;
-    private Rigidbody rb;
+    private float bulletLife = 3f;        //in Seconds
+    private float bulletSpeed = 0.9f;
+
+    [SerializeField] private GameObject damageText;
+
+    [System.NonSerialized] public float bulletDamage;       //Damage the bullet is carrying
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-
-        Physics.IgnoreCollision(GetComponent<Collider>(), 
-                                CarManager.instance.myCar.transform.GetChild(0).GetChild(0)
-                                .GetComponent<Collider>());
-
         StartCoroutine(DeleteAfterDelay());
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        rb.AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
+        Vector3 newPos = transform.position + (transform.forward * 1f);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, newPos,bulletSpeed);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.layer == 6) //player
+        {
+            Destroy(gameObject);
+            CarManager.instance.TakeDamage(bulletDamage);
+            ShowDamage(collision.transform);
+        }
+        else if (collision.gameObject.layer == 8 && !collision.collider.isTrigger) //turret
+        {
+            //Take damage to the turret
+            collision.gameObject.GetComponentInChildren<TurretBehaviour>().TakeDamage(bulletDamage);
+            Destroy(gameObject);
+            ShowDamage(collision.transform);
+        }
+    }
+
+    private void ShowDamage(Transform hitObj)
+    {
+        Quaternion rotation = Quaternion.Euler(new Vector3(0, 90, 0));
+        Vector3 textTransform = new Vector3(hitObj.position.x, hitObj.position.y + 2f, hitObj.position.z);
         
-        Debug.Log("Hit something! " + collision.gameObject.name);
-        Destroy(gameObject);
+        GameObject newDamage = Instantiate(damageText, textTransform, rotation);
+        //Get the damage amount from the bullet and show as text
+        newDamage.GetComponent<TMP_Text>().text = bulletDamage.ToString();
     }
 
     private IEnumerator DeleteAfterDelay()

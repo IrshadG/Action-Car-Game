@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class UIHandler : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class UIHandler : MonoBehaviour
     public GameObject canvasMenu;
     public GameObject canvasInGameUI;
     public GameObject canvasGameOver;
+
+    public TMP_Text gameOverCaption;
 
     //Singleton
     private void Awake()
@@ -27,5 +30,10 @@ public class UIHandler : MonoBehaviour
     public static void Open(GameObject obj)
     {
         obj.SetActive(true);
+    }
+
+    public void Victory()
+    {
+        gameOverCaption.text = "You Win!!";
     }
 }

@@ -15,5 +15,5 @@ MonoBehaviour:
   carPrefab: {fileID: 8211301392948707838, guid: de2dca766eb319b41b5fc6fd84e57ae3,
     type: 3}
   maxSpeed: 30
-  maxHP: 100
-  handling: 3
+  maxHP: 180
+  handling: 5
